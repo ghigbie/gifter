@@ -5,6 +5,8 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import layout.PersonIntro;
+
 public class MainActivity extends AppCompatActivity {
 
     private FragmentManager fragmentManager;
@@ -19,8 +21,8 @@ public class MainActivity extends AppCompatActivity {
     public void fragmentInitialize(){
         fragmentManager = getSupportFragmentManager();
         fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.
-
-
+        fragmentTransaction.add(R.id.fragment_container, new PersonIntro());
+        fragmentTransaction.addToBackStack(null);
+        fragmentTransaction.commit();
     }
 }
