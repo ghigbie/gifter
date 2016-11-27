@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Gifter</string>
+    <string name="welcome">Welcom to Gifter!</string>
+    <string name="opening">The app that helps you choose gifts for your loved ones."</string>
+    <string name="get_started">Get Started</string>
 </resources>
